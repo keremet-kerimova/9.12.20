@@ -15,10 +15,9 @@ h1{
     text-align: left;
 }
 a{
-    color: transparent;
+    color: white;
     padding: 10px;
     text-decoration: none;
-    text-align: end;
 }
 .id{
     border:white;
