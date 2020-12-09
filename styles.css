@@ -1,0 +1,15 @@
+*{box-sizing: border-box;}
+body{
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    background-color: black;
+    color: white
+}
+a{
+    color: white;
+    padding: 50px;
+    text-decoration: none;
+    text-align: end;
+}
