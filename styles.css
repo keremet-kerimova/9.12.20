@@ -3,41 +3,96 @@ body{
     margin: 0;
     padding: 0;
     background-color: black;
-    
+    height: 100%;
+    text-align: center;
+    text-shadow:  0 1px 3px rgb(0, 0, .5);
 }
 
-nav{
+div{
     display: flex;
-    margin: 0 15%;
+    flex-direction: column;
+    height: 100%;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    max-width: 672px;
+    margin-left: auto;
+    margin-right:auto;
+    font-family:'Roboto', sans-serif;  
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 36.6px;
 }
+   
+h3{
+    float: left;
+    font-size: 28px;
+    margin-top: 10px;
+    line-height: 36.6px;
+}
+
 ul{
-    margin-left: 60%;
+    margin-left: 55%;
     display: flex;
+    margin-right: 16px;
+    font-weight: 700;
+    line-height: 36.6px;
 }
 li{
     text-decoration: none;
+    list-style-type:none ;
     padding-left: 10%;
+    padding: 1px;
+    margin-left: 25px;
 }
-p, a, h1{
+
+a{
     color: white;
     text-decoration: none;
-    font-size: 25px;
-    font-family:  'Roboto', sans-serif;
-    
+    font-size: 20px;
+    font-family:  var(--bs-font-sans-serif); 
+}
+p{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-family:  var(--bs-font-sans-serif); 
+
+}
+h3{
+    font-size: 28px;
+    color: white;
+    text-decoration: none;
+}
+h1{
+    color: white;
+    text-decoration: none;
+    font-size: 35px;
+    font-family: var(--bs-font-sans-serif);;
 }
 .id{
     color: white;
-    text-decoration: underline 3px ;
-    font-family:  'Roboto', sans-serif;
+    border-bottom-color: white ;
+    font-family:var(--bs-font-sans-serif);
     font-weight: bold;
+    font-size: 20px ;
+    margin-left: 5px;
+
 }
 a:hover{
     color: white;
+    text-decoration: underline;
+    
    
+}
+header p{
+    font-weight: 300;
+    font-size: 20px;
 }
 
 header{
     margin: 10% 25%;
+    margin-top: 150px;
     text-align: center;
     max-width: 620px;
 }
@@ -50,4 +105,37 @@ button{
     font-weight: 100px;
     text-align: center;
   
+}
+.footer{
+    clear: both;
+    margin: auto;
+    text-align: center;
+    max-width: 620px;
+    height: 100%;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+
+}
+.footer p{
+    color: white;
+
+}
+.footer p  a{
+    align-items: center;
+    text-align: center;
+    display: inline-block;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 1em;
+    vertical-align: middle;
+
+}
+.footer a{
+    text-decoration: none;
+
+}
+.footer p{
+    color: blueviolet
+    ;
 }
