@@ -18,7 +18,7 @@ div{
     max-width: 672px;
     margin-left: auto;
     margin-right:auto;
-    font-family:'Roboto', sans-serif;  
+    font-family: 'Roboto', sans-serif;
     font-size: 1rem;
     font-weight: 400;
     line-height: 36.6px;
@@ -26,86 +26,132 @@ div{
    
 h3{
     float: left;
-    font-size: 28px;
+    font-size: 45px ;
+    font-weight: bold ; 
     margin-top: 10px;
-    line-height: 36.6px;
+    line-height: 1.2;
 }
 
 ul{
-    margin-left: 55%;
+    margin-left: 60%;
     display: flex;
-    margin-right: 16px;
+    margin-right: 6px;
     font-weight: 700;
     line-height: 36.6px;
 }
 li{
     text-decoration: none;
     list-style-type:none ;
-    padding-left: 10%;
-    padding: 1px;
-    margin-left: 25px;
-}
-
-a{
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
-    font-family:  var(--bs-font-sans-serif); 
-}
-p{
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
-    font-family:  var(--bs-font-sans-serif); 
-
-}
-h3{
-    font-size: 28px;
-    color: white;
-    text-decoration: none;
-}
-h1{
-    color: white;
-    text-decoration: none;
-    font-size: 35px;
-    font-family: var(--bs-font-sans-serif);;
-}
-.id{
-    color: white;
-    border-bottom-color: white ;
-    font-family:var(--bs-font-sans-serif);
-    font-weight: bold;
-    font-size: 20px ;
+    padding-left:10px;
+    padding: 10px;
     margin-left: 5px;
 
 }
-a:hover{
-    color: white;
-    text-decoration: underline;
+
+a{
+    color: rgba(255, 255, 255, .5);;
+    list-style-type: none;
+    text-decoration: none;
     
-   
-}
-header p{
-    font-weight: 300;
-    font-size: 20px;
 }
 
+p{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+
+}
+ nav h3{
+    display: block;
+    margin-top: 27px;
+    color: white;
+    text-decoration: none;
+        float: left;
+        font-size: 30px;
+        font-weight: 500;
+        line-height: 1.2;
+    }
+    
+
+  h1{
+    color: white;
+    text-decoration: none;
+    font-size: 35px;
+    font-size: 2.5rem;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 10px;
+    margin-bottom: .5rem;
+    
+}
+.id{
+    display: block;
+    color: white;
+    border-bottom: 4px solid white;
+    text-decoration: none;
+    padding-top: 2px;
+    margin: 0;
+    padding: 1px;
+    margin-right: 10px;
+
+}
+nav ul li{
+    display: inlne;
+    padding: 0;
+    margin: 0;
+
+}
+.di{
+    display: block;
+    padding: 1px;
+    border-bottom-color:  gray;
+    text-decoration: none;
+    margin-right: 10px;
+}
+.di:hover{
+    text-decoration:underline;
+    text-decoration: none;
+    border-bottom: 5px solid gray;
+}
+.id:hover{
+    border-bottom: 5px solid gray;
+}
+
+header p{
+    font-size: 1.25rem;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+}
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    
+}
+
+
 header{
-    margin: 10% 25%;
-    margin-top: 150px;
+    padding: 0 1.5rem;
+    margin-top: 110px;
     text-align: center;
     max-width: 620px;
+    display: inline-block;
 }
 button{
     background-color: white;
     color: black;
-    border-radius: 5px;
-    padding: 10px;
-    font-size: 15px;
-    font-weight: 100px;
+    border-color:  white;
+    font-weight: 700;
     text-align: center;
-  
+    padding: .4rem 1rem;
+    padding-top: 0.5rem;
+    padding-right: 1rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    font-size: 1.25rem;
+    border-radius: .3rem;
 }
+  
 .footer{
     clear: both;
     margin: auto;
@@ -117,25 +163,33 @@ button{
     flex-direction: row;
 
 }
-.footer p{
-    color: white;
-
-}
-.footer p  a{
-    align-items: center;
+footer{
     text-align: center;
-    display: inline-block;
-    padding: 0;
-    margin-top: 0;
-    margin-bottom: 1em;
-    vertical-align: middle;
+    color: gray;
+  
+}
+footer p{
+    color: gray;
 
 }
-.footer a{
+
+footer a{
     text-decoration: none;
-
+    color: white;
+    text-decoration: 1px white underline ;
 }
-.footer p{
-    color: blueviolet
-    ;
+@media(max-width:700px){
+  nav{
+        display: flex;
+        flex-direction: column;                                        
+    }
+    ul{
+        margin-left: -8%;
+    }
+    div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+         
+    }
 }
